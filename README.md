@@ -8,7 +8,7 @@ Many elderly people or senior citizens in Malaysia may not be fluent in English 
 Our robot aims to break the language barrier by providing the speech and document translation features to these elderly individuals. For example, the robot will detect the human voice from the conversations between elderly individuals and healthcare providers, ensuring they understand medical advice and prescriptions. The robot also can scan and translate written documents, for example, some elderly individuals might not be able to see the expiry date on the product they buy clearly, they can choose to snap the product using the camera, and the robot can capture the text and translate into the user's native language.
 
 ## Things to take note
-There is missing API KEY that need to add before running the application. The python file involves: 
+There is missing API KEY that need to add before running the application. The python files involve: 
  - capture_image_word_translator.py 
  - speech_translator.py
 
