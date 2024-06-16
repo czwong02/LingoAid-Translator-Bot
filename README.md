@@ -16,3 +16,5 @@ Example:
 OPENAI_API_KEY = < REPLACE WITH OPENAI_API_KEY>
 
 Therefore, if you want to run this application in Jupiter robot, you can contact group leader - +60 13-958 0338 (Rain Poo) to obtain the API KEY.
+
+Besides, usb_cam-test.launch file is used in this application but it didn't include in this github codebase. Therefore, please reuse the one that exist in the Jupiter robot.
