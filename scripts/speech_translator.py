@@ -1,7 +1,17 @@
 #!/usr/bin/env python
 
-# Purpose of speech_translator.py: to convert english input into malay input by sending request to openai
+# Purpose:
+# This script translates English text input into Malay using OpenAI's API. 
+# It subscribes to a ROS topic for English text and publishes the translated Malay text.
 
+# Input:
+# Topic: "speech_input" (Type: std_msgs/String)
+# Content: The English text input that needs to be translated into Malay.
+
+# Output:
+# Topic: "processed_speech_result" (Type: std_msgs/String)
+# Content: The translated Malay text.
+    
 import rospy
 from std_msgs.msg import String
 import requests
