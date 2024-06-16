@@ -1,7 +1,16 @@
 #!/usr/bin/env python
 
-# Purpose of capture_image_word_translator.py:
-# capture the english word on image and convert it the malay
+# Purpose: 
+# This script captures an image, extracts English words from the image, 
+# and translates them into Malay using the OpenAI API.
+
+# Input:
+# Topic: "capture_image_word_input" (Type: std_msgs/String)
+# Content: A string representing the file path or URL of the captured image to be processed.
+    
+# Output:
+# Topic: "processed_image_result" (Type: std_msgs/String)
+# Content: The translated text result in Malay, extracted from the image.
 
 import rospy
 from std_msgs.msg import String
