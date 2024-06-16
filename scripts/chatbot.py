@@ -1,10 +1,23 @@
 #!/usr/bin/env python
 
-# Purpose of chatbot.py: main body of chatbot where it will determine the type of action:
-# - capture word on a image and translate it to BM once the "take a picture" voice input is received
-# - receive the english voice input and translate it into BM
-# Finally, all the response will be speak out by the chatbot
+# Purpose:
+# This script manages user interaction, handles speech input, commands for taking pictures, 
+# and speaks out the translated results. It integrates with the speech recognition and image processing nodes.
 
+# Input
+# 1. Topic: "processed_speech_result" (Type: std_msgs/String)
+# Content: The translated text result of speech input.
+# 2. Topic: "processed_image_result" (Type: std_msgs/String)
+# Content: The translated text result of text extracted from an image.
+# 3. Topic: "/result" (Type: std_msgs/String)
+# Content: The recognized text result from Google Speech Recognition.
+
+# Output
+# 1. Topic: "take_photo" (Type: std_msgs/String)
+# Content: Command to take a photo (e.g., "take photo").
+# 2. Topic: "speech_input" (Type: std_msgs/String)
+# Content: The recognized text from speech input to be translated.
+    
 import rospy
 from std_msgs.msg import String
 from gtts import gTTS
