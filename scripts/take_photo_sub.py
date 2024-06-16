@@ -3,7 +3,19 @@
 # Script for simulation
 # Launch gazebo world prior to run this script
 
-## Purpose of take_photo_sub.py: to take photo using camera
+# Purpose:
+# This script captures a photo using a camera when commanded and publishes 
+# the file path of the saved image to a ROS topic for further processing.
+
+# Input:
+# 1. Topic: "/usb_cam/image_raw" (Type: sensor_msgs/Image)
+# Content: Raw image data from the camera.
+# 2. Topic: "/take_photo" (Type: std_msgs/String)
+# Content: Command to take a photo (e.g., "take photo").
+
+# Output:
+# Topic: "capture_image_word_input" (Type: std_msgs/String)
+# Content: The file path of the saved photo.
 
 # Import neccessary libraries
 from __future__ import print_function
