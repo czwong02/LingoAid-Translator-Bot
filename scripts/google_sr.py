@@ -4,10 +4,10 @@
 # This script uses Google Speech Recognition to convert voice input into text. 
 # It listens to the microphone and publishes the recognized text to a ROS topic.
 
-# Input
+# Input:
 # Source: Microphone input.
 
-# Output
+# Output:
 # Topic: "result" (Type: std_msgs/String)
 # Content: The recognized text from the speech input.
 
