@@ -4,7 +4,7 @@
 # This script manages user interaction, handles speech input, commands for taking pictures, 
 # and speaks out the translated results. It integrates with the speech recognition and image processing nodes.
 
-# Input
+# Input:
 # 1. Topic: "processed_speech_result" (Type: std_msgs/String)
 # Content: The translated text result of speech input.
 # 2. Topic: "processed_image_result" (Type: std_msgs/String)
@@ -12,7 +12,7 @@
 # 3. Topic: "/result" (Type: std_msgs/String)
 # Content: The recognized text result from Google Speech Recognition.
 
-# Output
+# Output:
 # 1. Topic: "take_photo" (Type: std_msgs/String)
 # Content: Command to take a photo (e.g., "take photo").
 # 2. Topic: "speech_input" (Type: std_msgs/String)
