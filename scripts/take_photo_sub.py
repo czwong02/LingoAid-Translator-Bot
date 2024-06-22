@@ -64,7 +64,7 @@ class TakePhoto:
     def take_picture(self, img_title):
         if self.image_received:
             # Save an image
-            img_title = 'catkin_ws/src/rain_group_assignment/img/' + img_title
+            img_title = 'catkin_ws/src/lingoaid_translator_bot/img/' + img_title
             cv2.imwrite(img_title, self.image)
             return True, img_title
         else:
@@ -82,7 +82,7 @@ class TakePhoto:
 
             if success:
                 rospy.loginfo("Saved image " + img_path)
-                img_url = "catkin_ws/src/rain_group_assignment/img/" + img_title
+                img_url = "catkin_ws/src/lingoaid_translator_bot/img/" + img_title
                 # Publish the location of the stored image
                 self.img_location_pub.publish(img_url)
             else:
