@@ -67,6 +67,6 @@ Kindly setup the ROS workspace before you clone the source code to your robot. I
 
 For vim ~/.bashrc, please ensure these two lines exist :
 
-    source /opt/ros/*<YOUR_ROS_VERSION>*/setup.bash
-    source ~/*<YOUR_ROS_WORKSPACE>*/devel/setup.bash
+    source /opt/ros/<YOUR_ROS_VERSION>/setup.bash
+    source ~/<YOUR_ROS_WORKSPACE>/devel/setup.bash
 
