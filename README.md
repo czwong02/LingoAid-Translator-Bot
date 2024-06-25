@@ -41,7 +41,7 @@ Besides, usb_cam-test.launch file is used in this application but it didn't incl
   
 
 > **WARNING!!!**
-Kindly setup the ROS workspace before you clone the source code to your robot. If there is no existing ROS workspace can be used, please create a new workspace.
+Kindly setup the ROS workspace before you clone the source code to your robot. If there is no existing ROS workspace that can be used, please create a new workspace.
 
 
 ## Steps to setup new ROS workspace
