@@ -51,6 +51,7 @@ Steps to setup new ROS workspace
 
 2. Create a folder src in the *<YOUR_ROS_WORKSPACE>* folder.
 
+>     cd <YOUR_ROS_WORKSPACE>
 >     mkdir src
 
 3. Run catkin_make in *<YOUR_ROS_WORKSPACE>* folder.
